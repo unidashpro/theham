@@ -1,0 +1,42 @@
+.main {
+
+}
+
+.main-options {
+  margin-top: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 360px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+
+  & p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.grid-item:nth-child(odd) {
+  background-color: $color-dark-blue;
+  & p {
+    color: $main-color;
+  }
+}
+
+.grid-item:nth-child(even) {
+  background-color: $main-color;
+  & p {
+    color: $secondary-color;
+  }
+}

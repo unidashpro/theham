@@ -1,0 +1,142 @@
+.gallery {
+  padding-top: 109px;
+  padding-bottom: 67px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 115px;
+}
+
+.grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 57px;
+}
+
+.grid-masonry {
+  width: 1160px;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.grid-masonry-item {
+  width: 378px;
+  margin-bottom: 13px;
+}
+
+.show-hidden {
+  position: relative;
+  &:hover .gallery-hidden {
+    opacity: 1;
+  }
+}
+
+.grid-masonry-item img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-masonry {
+  width: 364px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-right: 0;
+}
+
+.width-l {
+  width: 378px;
+}
+
+
+.width-s {
+  width: 187px;
+  height: 169px;
+}
+
+.width-xs {
+  width: 124px;
+  height: 92px;
+}
+
+.gallery-hidden {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.64);
+  padding-left: 20%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: opacity 0.3s linear;
+}
+
+.hidden-ico {
+  width: 37px;
+  height: 34px;
+  background: #14B9D5;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.hidden-search {
+  background-image: url("../assets/icons/hidden-search.svg");
+}
+
+.hidden-modal {
+  background-image: url("../assets/icons/hidden-modal.svg");
+}
+
+.small-icon {
+  width: 24px;
+  height: 21px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 140px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

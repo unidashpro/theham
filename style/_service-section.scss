@@ -1,0 +1,60 @@
+.service{
+  padding: 91px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.service-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 97px;
+}
+
+.tabs {
+  display: flex;
+  text-align: center;
+}
+
+.service-tabs-title {
+  width: 192px;
+
+  &.active {
+    background-color: $main-color;
+    color: $secondary-color;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      background-color: $main-color;
+      bottom: -16px;
+      left: 50%;
+      transform: rotate(45deg) translateX(-50%);
+    }
+  }
+}
+
+.tabs-content {
+  margin-top: 28px;
+}
+
+.tabs-item {
+  display: none;
+  gap: 13px;
+  align-items: center;
+
+  & p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: $light-black;
+  }
+
+  &.active {
+    display: flex;
+  }
+}
+

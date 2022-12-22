@@ -1,0 +1,89 @@
+.section-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-dark-grey;
+  position: relative;
+  user-select: none;
+
+  &::before, &::after{
+    content: '';
+    height: 1px;
+    width: 78px;
+    position: absolute;
+    border-bottom: 1px solid $main-color;
+  }
+
+  &::before{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -26px;
+  }
+  &::after{
+    left: 50%;
+    transform: translateX(-35%);
+    bottom: -30px;
+  }
+}
+
+
+.menu-button {
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 32px;
+  color: $secondary-color;
+  padding: 16px 0;
+  border-radius: 6px;
+  background-color: $main-color;
+
+  &.blue {
+    background-color: $light-blue;
+
+    &:hover {
+      background-color: #00a3c9;
+    }
+  }
+
+  &:hover {
+    background-color: #12a286;
+  }
+
+}
+
+.tabs-list {
+  font-weight: 400;
+  font-size: 16px;
+  color: $light-black;
+  line-height: 39px;
+  padding: 17px 0;
+  background-color: $tabs-bg-color;
+  border: 1px solid $light-grey;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border: 1px solid $main-color;
+  }
+}
+
+.load-button {
+  padding: 23px;
+  background-color: $main-color;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  & span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: $secondary-color;
+  }
+}

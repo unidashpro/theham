@@ -1,0 +1,26 @@
+@import "./_reset.scss";
+@import "./_variables.scss";
+@import "./_mixines.scss";
+@import "./_font.scss";
+@import "./UI/_ui-components.scss";
+@import "./_header.scss";
+@import "./_options-section.scss";
+@import "./_service-section.scss";
+@import "./_purchase-section.scss";
+@import "./_work-section.scss";
+@import "./_news-section.scss";
+@import "./_feedback-section.scss";
+@import "./_footer.scss";
+@import "./UI/_animation-loading.scss";
+@import "./_gallery-section.scss";
+
+html {
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+    width: 1160px;
+    text-align: center;
+}
+
+

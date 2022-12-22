@@ -1,0 +1,126 @@
+.feedback {
+  background-image: url("../assets/img/bg/section-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback-content-wrapper {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.61);
+  mix-blend-mode: normal;
+}
+
+.feedback-title {
+  color: $secondary-color;
+}
+
+.feedback-block {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  align-items: center;
+  transition: all 0.25s linear;
+}
+
+.feedback-image {
+  width: 171px;
+  height: 166px;
+  border-radius: 50%;
+  border: 12px solid rgba(31, 218, 181, 0.2);
+}
+
+.quote-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color-grey;
+}
+
+.quote-author {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: $main-color;
+  padding-bottom: 9px;
+  &-position {
+    font-weight: 300;
+    font-size: 13px;
+    color: $color-grey;
+  }
+}
+
+.carousel-block {
+  margin-top: 38px;
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.carousel-image-wrapper {
+  display: flex;
+  gap: 21px;
+}
+
+.feedback-carousel-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 7px solid rgba(31, 218, 181, 0.2);
+  cursor: pointer;
+
+  &.active {
+    position: relative;
+    animation: moveUp 0.25s linear forwards;
+  }
+}
+
+.change-photo-btn {
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid $color-grey;
+  color: $color-grey;
+  position: relative;
+
+  &:hover {
+    background-color: $main-color;
+    border: none;
+    color: $secondary-color;
+  }
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid currentColor;
+  }
+
+  &.left::before {
+    transform: rotate(-45deg) translate(45%, -85%);
+    top: 70%;
+  }
+
+  &.right::before {
+    transform: rotate(135deg);
+    top: 30%;
+    left: 20%;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 11px;
+  }
+}

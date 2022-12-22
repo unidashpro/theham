@@ -1,0 +1,39 @@
+.purchase {
+  width: 100%;
+  background-image: url("../assets/img/bg/purchase-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.purchase-content-wrapper {
+  background-color: rgba(0, 0, 0, 0.78);
+  mix-blend-mode: normal;
+  padding: 128px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 62px;
+}
+
+.purchase-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.purchase-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: $main-color;
+}
+.purchase-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: $light-grey;
+}
