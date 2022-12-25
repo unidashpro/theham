@@ -1,7 +1,7 @@
 export const tabsWrapper = document.querySelector('.tabs');
 export const tabsContent = document.querySelector('.tabs-content');
 
-const photos = {
+export const photos = {
     'Graphic Design': [
         'graphic design/1.jpg',
         'graphic design/2.jpg',
@@ -58,38 +58,10 @@ const photos = {
         'wordpress/11.jpg',
         'wordpress/12.jpg',
     ],
-    // // test: [...this['Graphic Design'], ...this['Landing Pages']],
-    // test: function () {
-    //     return [...this.Wordpress];
-    // },
-    // // new: this.test(),
+    All: function () {
+        return [...this['Graphic Design'], ...this['Web Design'], ...this['Landing Pages'], ...this.Wordpress];
+    },
 };
-
-let all = [];
-
-const additionalPhotos = [
-    'additional/13.jpg',
-    'additional/14.jpg',
-    'additional/15.jpg',
-    'additional/16.jpg',
-    'additional/17.jpg',
-    'additional/18.jpg',
-    'additional/19.jpg',
-    'additional/20.jpg',
-    // 'additional/21.jpg',
-    // 'additional/22.jpg',
-    // 'additional/23.jpg',
-    // 'additional/24.jpg',
-];
-
-for (const [key, value] of Object.entries(photos)) {
-    all.push(...value);
-    value.push(...additionalPhotos);
-}
-
-photos.All = [...all, ...additionalPhotos];
-
-export default photos;
 
 export const postInfo = [
     {
@@ -194,41 +166,40 @@ export const feedbackInfo = [
 ];
 
 export const galleryImages = [
-    './assets/img/gallery/vanglo-house-1.png',
-    './assets/img/gallery/skyscraper.png',
+    './assets/img/gallery/vanglo-house-1.webp',
+    './assets/img/gallery/skyscraper.webp',
     [
-        ['./assets/img/gallery/ringve-museum.png', 'width-s'],
-        ['./assets/img/gallery/Kids-Store-Lighting.png', 'width-s'],
-        ['./assets/img/gallery/swiming-pool.png', 'width-xs'],
-        ['./assets/img/gallery/Kids-Store.png', 'width-xs'],
-        ['./assets/img/gallery/vanglo-house-4.png', 'width-xs'],
-        ['./assets/img/gallery/Kids-Store-Lighting.png', 'width-xs'],
-        ['./assets/img/gallery/vanglo-house-3.png', 'width-xs'],
-        ['./assets/img/gallery/hourses.png', 'width-xs'],
-        ['./assets/img/gallery/vanglo-house-1.png', 'width-xs'],
-        ['./assets/img/gallery/billionares.png', 'width-xs'],
-        ['./assets/img/gallery/Brazil-staduims.png', 'width-xs'],
+        ['./assets/img/gallery/ringve-museum.webp', 'width-s'],
+        ['./assets/img/gallery/Kids-Store-Lighting.webp', 'width-s'],
+        ['./assets/img/gallery/swiming-pool.webp', 'width-xs'],
+        ['./assets/img/gallery/Kids-Store.webp', 'width-xs'],
+        ['./assets/img/gallery/vanglo-house-4.webp', 'width-xs'],
+        ['./assets/img/gallery/Kids-Store-Lighting.webp', 'width-xs'],
+        ['./assets/img/gallery/vanglo-house-3.webp', 'width-xs'],
+        ['./assets/img/gallery/hourses.webp', 'width-xs'],
+        ['./assets/img/gallery/vanglo-house-1.webp', 'width-xs'],
+        ['./assets/img/gallery/billionares.webp', 'width-xs'],
+        ['./assets/img/gallery/Brazil-staduims.webp', 'width-xs'],
     ],
-    './assets/img/gallery/vanglo-house-2.png',
-    './assets/img/gallery/interior.png',
-    './assets/img/gallery/arch.png',
-    './assets/img/gallery/ringve-museum.png',
-    './assets/img/gallery/vanglo-house-1.png',
-    './assets/img/gallery/bicycle.jpg',
-    './assets/img/gallery/car-heart.jpg',
-    './assets/img/gallery/city-night.jpg',
-    './assets/img/gallery/tower.jpg',
-    './assets/img/gallery/cup.jpg',
-    './assets/img/gallery/deer.jpg',
-    './assets/img/gallery/sweets.jpg',
-    './assets/img/gallery/trashcan.jpg',
-
-    './assets/img/gallery/child.jpg',
-    './assets/img/gallery/cafe.jpg',
-    './assets/img/gallery/records.jpg',
-    './assets/img/gallery/cofee.jpg',
-    './assets/img/gallery/bird.jpg',
-    './assets/img/gallery/cat.jpg',
-    './assets/img/gallery/book.jpg',
-    './assets/img/gallery/gift.jpg',
+    './assets/img/gallery/vanglo-house-2.webp',
+    './assets/img/gallery/interior.webp',
+    './assets/img/gallery/arch.webp',
+    './assets/img/gallery/ringve-museum.webp',
+    './assets/img/gallery/vanglo-house-1.webp',
+    './assets/img/gallery/bicycle.webp',
+    './assets/img/gallery/car-heart.webp',
+    './assets/img/gallery/city-night.webp',
+    './assets/img/gallery/tower.webp',
+    './assets/img/gallery/cup.webp',
+    './assets/img/gallery/deer.webp',
+    './assets/img/gallery/sweets.webp',
+    './assets/img/gallery/trashcan.webp',
+    './assets/img/gallery/child.webp',
+    './assets/img/gallery/cafe.webp',
+    './assets/img/gallery/records.webp',
+    './assets/img/gallery/cofee.webp',
+    './assets/img/gallery/bird.webp',
+    './assets/img/gallery/cat.webp',
+    './assets/img/gallery/book.webp',
+    './assets/img/gallery/gift.webp',
 ];

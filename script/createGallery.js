@@ -76,7 +76,7 @@ function createSubGrid(arr) {
 function tooltips(e) {
     if (e.target.classList.contains('hidden-search')) {
         const img = e.target.closest('.show-hidden').style.backgroundImage.slice(5, -2);
-        window.open(`https://www.google.com/search?q=${img.slice(img.lastIndexOf('/') + 1, -4).replaceAll('-', ' ') + ' photo'}`, '_blank').focus();
+        window.open(`https://www.google.com/search?q=${img.slice(img.lastIndexOf('/') + 1, -5).replaceAll('-', ' ') + ' photo'}`, '_blank').focus();
     }
     if (e.target.classList.contains('hidden-modal')) {
         const img = e.target.closest('.show-hidden').style.backgroundImage.slice(5, -2);

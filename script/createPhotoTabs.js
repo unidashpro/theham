@@ -1,5 +1,5 @@
 'use strict';
-import photos from './variables.js';
+import { photos } from './variables.js';
 import { createPhotoHover } from './createPhotoHover.js';
 const photoTabsWrapper = document.querySelector('.photos-container').querySelector('.tabs');
 const photoPlace = document.querySelector('.photos-grid');
@@ -8,10 +8,9 @@ const loadAnimation = document.querySelector('.centered');
 let counter = 0;
 let prevTarget = photoTabsWrapper.children[0];
 
-// TODO переделать массив с фото в объект, добавить тег ключ который будет выводиться на картинку при ховере
-// Ключ можно вытащить из пути картинки
-
 function createWorkGrid(atr, more = false) {
+    const photoArr = atr === 'All' ? photos.All() : photos[atr];
+    console.log(photoArr);
     if (!more) {
         photoPlace.innerHTML = '';
         counter = 0;
@@ -20,11 +19,11 @@ function createWorkGrid(atr, more = false) {
     for (let i = 0; i < 12; i++) {
         photoPlace.innerHTML += `
         <div class="photos-grid-item">
-        <img src="./assets/img/${photos[atr][counter]}" alt="Our Work Images">
-        ${createPhotoHover(photos[atr][counter])}
+        <img src="./assets/img/${photoArr[counter]}" alt="Our Work Images">
+        ${createPhotoHover(photoArr[counter])}
         </div>
         `;
-        if (counter === photos[atr].length - 1) {
+        if (counter === photoArr.length - 1) {
             loadButton.style.visibility = 'hidden';
             break;
         }
@@ -33,6 +32,7 @@ function createWorkGrid(atr, more = false) {
 }
 
 const createTabs = () => {
+    console.log(photos.All());
     prevTarget.classList?.add('active');
     [...photoTabsWrapper.children].forEach(e => e.setAttribute('data-about', e.innerText));
     let dataAtr = prevTarget.getAttribute('data-about');
@@ -53,6 +53,7 @@ const createTabs = () => {
 };
 
 loadButton.addEventListener('click', () => {
+    console.log(photos.All());
     loadButton.style.visibility = 'hidden';
     loadAnimation.style.visibility = 'visible';
     setTimeout(() => {
@@ -63,6 +64,6 @@ loadButton.addEventListener('click', () => {
 });
 
 export const createPhotoTabs = () => {
-    // console.log(photos.test());
+    console.log(photos.All());
     createTabs();
 };
