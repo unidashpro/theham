@@ -143,25 +143,25 @@ export const feedbackInfo = [
         user: 'HASAN ALI',
         position: 'UX Designer',
         quote: 'Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.',
-        userImg: './assets/img/feedback/azuki1.jpg',
+        userImg: './assets/img/feedback/dictator.png',
     },
     {
         user: 'WALTER WHITE',
         position: 'Drug Dealer',
         quote: 'You clearly don’t know who you’re talking to, so let me clue you in. I am not in danger, Skyler. I am the danger. A guy opens his door and gets shot, and you think that of me? No! I am the one who knocks!',
-        userImg: './assets/img/feedback/azuki2.jpg',
+        userImg: './assets/img/feedback/bing1.png',
     },
     {
         user: 'DON VITO CORLEONE',
         position: 'The Godfather',
         quote: 'They made me an offer I couldn’t refuse. Friendship is everything. Friendship is more than talent. It is more than the government. It is almost the equal of family. Great men are not born great, they grow great.',
-        userImg: './assets/img/feedback/azuki3.jpg',
+        userImg: './assets/img/feedback/borat.png',
     },
     {
-        user: 'HASAN ALI',
+        user: 'HERMIONA GRAY',
         position: 'UX Designer',
         quote: 'Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.',
-        userImg: './assets/img/feedback/azuki4.jpg',
+        userImg: './assets/img/feedback/pt.png',
     },
 ];
 

@@ -10,10 +10,3 @@ createPhotoTabs();
 createNews();
 createSlider();
 createGallery();
-
-var elem = document.querySelector('.grid-masonry');
-var msnry = new Masonry(elem, {
-    // options
-    itemSelector: '.grid-masonry-item',
-    columnWidth: 20,
-});
